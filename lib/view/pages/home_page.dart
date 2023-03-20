@@ -54,12 +54,6 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.black54,
         elevation: 0,
         title: Text("Tarefas do dia a dia"),
-        actions: [
-          IconButton(
-            onPressed: () => _removeItem(0),
-            icon: Icon(Icons.delete),
-          )
-        ],
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       floatingActionButton: FloatingActionButton(
@@ -126,6 +120,11 @@ class _HomePageState extends State<HomePage> {
                       position: animation.drive(_offset),
                       child: CardTask(
                         task: task,
+                        onEditComplete: (taskEdited) async {
+                          await _saveItens();
+                          Navigator.pop(context);
+                          setState(() {});
+                        },
                         onToogleTaped: () => _saveItens(),
                         onRemoveTaped: () => _removeItem(index),
                       ),
@@ -186,6 +185,7 @@ class _HomePageState extends State<HomePage> {
           position: animation.drive(_offset),
           child: CardTask(
             task: task,
+            onEditComplete: (task) {},
             onToogleTaped: () {},
             onRemoveTaped: () {},
           ),
