@@ -1,16 +1,7 @@
 # todo_list_flutter
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Instruções de Uso
+ - Tenha o [**Flutter SDK**](https://flutter.dev/docs/get-started/install), instalado em sua máquina.
+ - Selecione o Device que será usado para o teste, recomendo o [**AVD Manager**](https://developer.android.com/studio/run/managing-avds?hl=pt-br) do Android Studio.
+ - Clone o repositório e execute o comando ````flutter run```` na pasta raiz do repositório.
+ - Ou execute diretamente  no seu dispositivo utilizando o app.apk
